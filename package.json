@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-mysql-express",
+  "version": "1.0.0",
+  "description": "NodeJS, Express with MySQL to create API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kshirodram/nodejs-mysql-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kshirodram/nodejs-mysql-express/issues"
+  },
+  "homepage": "https://github.com/Kshirodram/nodejs-mysql-express#readme"
+}
