@@ -1,9 +1,13 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 import userRoutes from "./routes/user.routes";
 
 const app = express();
+
+// use cors for CORS issue
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
