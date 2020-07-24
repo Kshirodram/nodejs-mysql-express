@@ -4,6 +4,8 @@
   "description": "NodeJS, Express with MySQL to create API",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec babel-node index.js",
+    "start": "node node_modules/.bin/babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/Kshirodram/nodejs-mysql-express/issues"
   },
-  "homepage": "https://github.com/Kshirodram/nodejs-mysql-express#readme"
+  "homepage": "https://github.com/Kshirodram/nodejs-mysql-express#readme",
+  "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {}
 }
