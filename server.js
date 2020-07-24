@@ -4,6 +4,8 @@ import cors from "cors";
 
 import userRoutes from "./routes/user.routes";
 
+import packageJSON from "./package.json";
+
 const app = express();
 
 // use cors for CORS issue
@@ -17,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "API status: OK" });
+  res.json({ status: "OK", version: packageJSON.version });
 });
 
 userRoutes(app);

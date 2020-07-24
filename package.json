@@ -1,6 +1,6 @@
 {
   "name": "nodejs-mysql-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS, Express with MySQL to create API",
   "main": "index.js",
   "scripts": {
