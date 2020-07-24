@@ -2,7 +2,7 @@ import UserModel from "../models/user.model.js";
 
 // Create and Save a new User
 const create = (req, res) => {
-  console.log("######");
+
   // Validate request
   if (!req.body) {
     res.status(400).send({
@@ -15,16 +15,9 @@ const create = (req, res) => {
     email: req.body.email,
     name: req.body.name,
     age: req.body.age,
-    houseNo: req.body.houseNo,
-    lane1: req.body.lane1,
-    lane2: req.body.lane2,
-    city: req.body.city,
-    state: req.body.state,
-    country: req.body.country,
-    postalCode: req.body.postalCode,
     active: req.body.active,
   });
-  console.log("@@@@@@", user);
+
   // Save user in the database
   UserModel.create(user, (err, data) => {
     if (err)

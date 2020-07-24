@@ -5,13 +5,6 @@ class User {
     this.email = user.email;
     this.name = user.name;
     this.age = parseInt(user.age);
-    this.houseNo = user.houseNo;
-    this.lane1 = user.lane1;
-    this.lane2 = user.lane2;
-    this.city = user.city;
-    this.state = user.state;
-    this.country = user.country;
-    this.postalCode = user.postalCode;
     this.active = user.active;
   }
 

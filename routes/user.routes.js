@@ -1,7 +1,7 @@
 import * as users from "../controllers/user.controller.js";
+import * as userAddress from "../controllers/userAddresses.controller.js";
 
 export default (app) => {
-  console.log(users);
   // Create a new user
   app.post("/users", users.create);
 
@@ -19,4 +19,10 @@ export default (app) => {
 
   // Create a new user
   app.delete("/users", users.deleteAll);
+
+  // create user address
+  app.post("/users/:userId/addresses", userAddress.create);
+
+  // Get user address
+  app.get("/users/:userId/addresses", userAddress.findAll);
 };
